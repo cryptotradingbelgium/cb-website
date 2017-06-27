@@ -1,0 +1,25 @@
+// Grid 
+// AUTHOR: @amnesiacu
+// General column layout, based on flex mixins, not really responsive.
+
+.container{
+    margin:         0px auto 0px auto;
+    width:          80%;
+}
+
+.row{
+    @include flex-row;
+    width:          100%;
+}
+
+.col-half{
+    width:          50%;
+}
+
+.col-third{
+    width:          33%;
+}
+
+.col-forth{
+    width:          25%;
+}
