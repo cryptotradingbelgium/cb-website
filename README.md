@@ -13,4 +13,4 @@ Homepage of the CTB Slack Community
 ## How to Run 
  - `yarn install` or `npm install`
  - `yarn start`   or `npm start`
- - sass --watch sass:public/css
+ - `sass --watch sass:public/css`
