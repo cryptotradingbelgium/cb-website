@@ -106,6 +106,15 @@ section{
 //Header 
 .header{
     background-image:       url('/images/ctb_home_hero.jpg');
+    @media (max-width: 1600px) {
+        background-image:   url('/images/ctb_home_hero_1600.jpg');
+    }
+    @media (max-width: 900px) {
+        background-image:   url('/images/ctb_home_hero_900.jpg');
+    }
+    @media (max-width: 500px) {
+        background-image:   url('/images/ctb_home_hero_500.jpg');
+    }
     background-position:    center;
     background-repeat:      no-repeat;
     background-size:        cover;

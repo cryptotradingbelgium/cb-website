@@ -117,6 +117,15 @@ section {
   background-size: cover;
   position: relative;
   height: 40vh; }
+  @media (max-width: 1600px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_1600.jpg"); } }
+  @media (max-width: 900px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_900.jpg"); } }
+  @media (max-width: 500px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_500.jpg"); } }
   .header .header--caption {
     position: absolute;
     bottom: 5vh;
