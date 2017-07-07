@@ -15,6 +15,7 @@ $font-mono:   monospace;
 //Colors:
 $cl-dark:   #525252;
 $cl-attn:   #FF6276;
+$cl-green:  #00b159;
 $cl-light:  #EDF4F7;
 $cl-yellow: #B58900;
 
@@ -65,6 +66,15 @@ body{
     border-color:       $cl-light;
     color:              $cl-light;
     border-radius:      3px;
+    &--attn{
+        background-color: $cl-attn;
+    }
+    &--green{
+        background-color: $cl-green;
+    }
+    &--dark{
+        background-color: $cl-dark;
+    }
 }
 
 section{
@@ -73,6 +83,9 @@ section{
 
 .text-center{
     text-align:     center;
+}
+.text-right{
+    text-align:     right;
 }
 
 //Navbar 
@@ -106,6 +119,15 @@ section{
 //Header 
 .header{
     background-image:       url('/images/ctb_home_hero.jpg');
+    @media (max-width: 1600px) {
+        background-image:   url('/images/ctb_home_hero_1600.jpg');
+    }
+    @media (max-width: 900px) {
+        background-image:   url('/images/ctb_home_hero_900.jpg');
+    }
+    @media (max-width: 500px) {
+        background-image:   url('/images/ctb_home_hero_500.jpg');
+    }
     background-position:    center;
     background-repeat:      no-repeat;
     background-size:        cover;
@@ -138,11 +160,12 @@ section{
 #slack{
     background-color: $cl-dark;
     color: $cl-light;
-    .slack-logo{
-        padding:    10px;
-        height:     150px;
-        width:      auto;
-    }
+}
+
+.slack-logo{
+    padding:    10px;
+    height:     150px;
+    width:      auto;
 }
 
 
@@ -153,16 +176,26 @@ section{
 }
 
 #about-intro{
-    .about--description {
-        padding-left:   25px;
+    h1{
+        margin: 5px 0;
     }
+}
+
+.about-image{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+.about--description{
+    text-align: justify;
 }
 
 #about-team{
     background-color:   $cl-dark;
     color:              $cl-light;
-    h3{
-        margin-bottom: 5px;
+
+    h1,h3{
+        margin: 5px 0;
     }
     .founder--image {
         width:          75px;
