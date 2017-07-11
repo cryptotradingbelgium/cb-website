@@ -28,7 +28,7 @@ $cl-yellow: #B58900;
 
 //Generic
 html {
-    box-sizing: border-box;
+    box-sizing:         border-box;
 }
 
 *, *:before, *:after {
@@ -66,8 +66,7 @@ body{
     margin:             0   5px;
     padding:            5px 10px;
     background-color:   transparent;
-    border:             1px solid;
-    border-color:       $cl-light;
+    border:             1px solid $cl-light;
     color:              $cl-light;
     border-radius:      3px;
     &--attn{
@@ -112,7 +111,7 @@ section{
     };
     &--item{
         padding:            0 20px;
-        font-family:        $font-header;
+        font-family:        $font-head;
         text-transform:     uppercase;
         &__right{
             margin-left:    auto;
@@ -142,6 +141,9 @@ section{
         position:           absolute;
         bottom:             5vh;
         color:              $cl-light;
+        text-shadow:        0 0 5px rgba(0,0,0,.75);
+        font-size:          1.0vw;
+
         &__highlight{
             border-bottom:  3px solid $cl-attn;
             padding-bottom: 3px;

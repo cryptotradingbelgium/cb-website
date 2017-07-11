@@ -68,8 +68,7 @@ body {
   margin: 0   5px;
   padding: 5px 10px;
   background-color: transparent;
-  border: 1px solid;
-  border-color: #EDF4F7;
+  border: 1px solid #EDF4F7;
   color: #EDF4F7;
   border-radius: 3px; }
   .btn--attn {
@@ -117,7 +116,7 @@ section {
       color: #FF6276; }
   .navbar--item {
     padding: 0 20px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Qanelas", serif;
     text-transform: uppercase; }
     .navbar--item__right {
       margin-left: auto; }
@@ -139,7 +138,9 @@ section {
   .header .header--caption {
     position: absolute;
     bottom: 5vh;
-    color: #EDF4F7; }
+    color: #EDF4F7;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+    font-size: 1.0vw; }
     .header .header--caption__highlight {
       border-bottom: 3px solid #FF6276;
       padding-bottom: 3px; }
