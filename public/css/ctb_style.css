@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @font-face {
-  font-family: Qanelas;
-  src: url("/fonts/Qanelas.otf") format("opentype"); }
+  font-family: "Qanelas";
+  src: url(../public/fonts/Qanelas.otf); }
 .container {
   margin: 0px auto 0px auto;
   width: 80%; }

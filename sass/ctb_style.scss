@@ -4,9 +4,13 @@
 //Imports
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@font-face {
+    font-family: Qanelas;
+    src: url("/fonts/Qanelas.otf") format("opentype");
+}
 
 // Fonts
-$font-head:   'Montserrat', serif;
+$font-head:   'Qanelas', serif;
 $font-header: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 $font-sub:    'Ubuntu', sans-serif;
 $font-text:   'Ubuntu', sans-serif;
@@ -118,9 +122,9 @@ section{
 
 //Header 
 .header{
-    background-image:       url('/images/ctb_home_hero.jpg');
+
     @media (max-width: 1600px) {
-        background-image:   url('/images/ctb_home_hero_1600.jpg');
+        background-image:   url('/images/ctb_home_hero_1600.jpg') ;
     }
     @media (max-width: 900px) {
         background-image:   url('/images/ctb_home_hero_900.jpg');
@@ -128,8 +132,8 @@ section{
     @media (max-width: 500px) {
         background-image:   url('/images/ctb_home_hero_500.jpg');
     }
-    background-position:    center;
-    background-repeat:      no-repeat;
+
+    background: url('/images/ctb_home_hero.jpg') no-repeat center;
     background-size:        cover;
     position:               relative;
     height:                 40vh;
