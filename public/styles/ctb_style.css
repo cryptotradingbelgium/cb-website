@@ -122,30 +122,32 @@ section {
       margin-left: auto; }
 
 .header {
-  background: url("/images/ctb_home_hero.png") no-repeat center;
+  background: url("/images/ctb_home_hero_500.jpg") no-repeat center;
   background-size: cover;
-  height: 50vh;
+  height: 400px;
   display: flex;
   align-items: center; }
-  @media (max-width: 1600px) {
-    .header {
-      background: url("/images/city-sunny-people-street-small.jpg") no-repeat center;
-      background-size: cover; } }
-  @media (max-width: 900px) {
-    .header {
-      background-image: url("/images/ctb_home_hero_900.jpg"); } }
-  @media (max-width: 500px) {
-    .header {
-      background-image: url("/images/ctb_home_hero_500.jpg"); }
-      .header .header--caption {
-        font-size: 5vw; } }
   .header .header--caption {
     color: #FFFFFF;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-    font-size: 1.0vw; }
-    .header .header--caption__highlight {
-      border-bottom: 3px solid #03a9f4;
-      padding-bottom: 3px; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0; }
+  .header .caption--underline {
+    height: 10px;
+    background-color: #03a9f4;
+    width: 25%;
+    border-radius: 10px;
+    margin-top: -12px; }
+  @media (min-width: 500px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_900.jpg"); } }
+  @media (min-width: 900px) {
+    .header {
+      background-image: url("/images/ctb_home_hero.jpg"); } }
 
 #intro .intro-image {
   width: 75%;
