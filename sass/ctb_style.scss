@@ -11,16 +11,15 @@
 
 // Fonts
 $font-head:   'Qanelas', serif;
-$font-header: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 $font-sub:    'Ubuntu', sans-serif;
 $font-text:   'Ubuntu', sans-serif;
 $font-mono:   monospace;
 
 //Colors:
 $cl-dark:   #525252;
-$cl-attn:   #FF6276;
+$cl-attn:   #03a9f4;
 $cl-green:  #00b159;
-$cl-light:  #EDF4F7;
+$cl-light:  #FFFFFF;
 $cl-yellow: #B58900;
 
 @import 'flex';
@@ -121,25 +120,30 @@ section{
 
 //Header 
 .header{
-
     @media (max-width: 1600px) {
-        background-image:   url('/images/ctb_home_hero_1600.jpg') ;
+        background:   url('/images/city-sunny-people-street-small.jpg') no-repeat center;
+        background-size: cover;
     }
     @media (max-width: 900px) {
         background-image:   url('/images/ctb_home_hero_900.jpg');
     }
     @media (max-width: 500px) {
         background-image:   url('/images/ctb_home_hero_500.jpg');
+
+        .header--caption{
+            font-size: 5vw;
+        }
+
     }
 
-    background: url('/images/ctb_home_hero.jpg') no-repeat center;
+
+    background: url('/images/ctb_home_hero.png') no-repeat center;
     background-size:        cover;
-    position:               relative;
-    height:                 40vh;
+    height:                 50vh;
+    display:                flex;
+    align-items:            center;
 
     .header--caption{
-        position:           absolute;
-        bottom:             5vh;
         color:              $cl-light;
         text-shadow:        0 0 5px rgba(0,0,0,.75);
         font-size:          1.0vw;
