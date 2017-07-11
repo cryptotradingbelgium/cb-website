@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+.container {
+  margin: 0px auto 0px auto;
+  width: 80%; }
+
+.row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100%; }
+
+.col-25 {
+  width: 25%; }
+
+.col-33 {
+  width: 33%; }
+
+.col-50 {
+  width: 50%; }
+
+.col-66 {
+  width: 66%; }
+
+.col-75 {
+  width: 75%; }
+
+.col-100 {
+  width: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0px;
+  background-color: #EDF4F7;
+  color: #525252;
+  font-family: "Ubuntu", sans-serif; }
+  body h1 {
+    font-family: "Montserrat", serif; }
+  body h2, body h3, body h4 {
+    font-family: "Ubuntu", sans-serif; }
+  body a {
+    font-size: small;
+    text-decoration: none;
+    color: #FF6276;
+    outline: none; }
+  body p, body .text {
+    font-size: small;
+    font-family: "Ubuntu", sans-serif; }
+
+.btn {
+  margin: 0   5px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #EDF4F7;
+  color: #EDF4F7;
+  border-radius: 3px; }
+  .btn--attn {
+    background-color: #FF6276; }
+  .btn--green {
+    background-color: #00b159; }
+  .btn--dark {
+    background-color: #525252; }
+
+section {
+  padding: 20px 0; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.navbar {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  min-height: 50px; }
+  .navbar--link {
+    color: #EDF4F7;
+    font-size: 20px;
+    font-weight: 800; }
+    .navbar--link:hover {
+      color: #FF6276; }
+  .navbar--item {
+    padding: 0 20px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    .navbar--item__right {
+      margin-left: auto; }
+
+.header {
+  background-image: url("/images/ctb_home_hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 40vh; }
+  @media (max-width: 1600px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_1600.jpg"); } }
+  @media (max-width: 900px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_900.jpg"); } }
+  @media (max-width: 500px) {
+    .header {
+      background-image: url("/images/ctb_home_hero_500.jpg"); } }
+  .header .header--caption {
+    position: absolute;
+    bottom: 5vh;
+    color: #EDF4F7; }
+    .header .header--caption__highlight {
+      border-bottom: 3px solid #FF6276;
+      padding-bottom: 3px; }
+
+#intro .intro-image {
+  width: 75%;
+  height: auto; }
+#intro .intro-text {
+  padding: 5px 20px; }
+
+#slack {
+  background-color: #525252;
+  color: #EDF4F7; }
+
+.slack-logo {
+  padding: 10px;
+  height: 150px;
+  width: auto; }
+
+.footer {
+  padding: 20px 0;
+  font-size: small; }
+
+#about-intro h1 {
+  margin: 5px 0; }
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 7px; }
+
+.about--description {
+  text-align: justify; }
+
+#about-team {
+  background-color: #525252;
+  color: #EDF4F7; }
+  #about-team h1, #about-team h3 {
+    margin: 5px 0; }
+  #about-team .founder--image {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 30px; }
+
+@media (max-width: 550px) {
+  .col-sm-full {
+    width: 100%; } }
+@media (max-width: 780px) {
+  .btn-sm-full {
+    width: 100%;
+    display: block;
+    margin: 5px 0; } }
+
+/*# sourceMappingURL=ctb_style.css.map */

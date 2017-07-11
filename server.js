@@ -12,21 +12,21 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', 'index.html'));
+    res.sendFile(path.join(__dirname, '/views', 'index.html'));
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', 'about.html'));
+    res.sendFile(path.join(__dirname, '/views', 'about.html'));
 });
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', 'contact.html'));
+    res.sendFile(path.join(__dirname, '/views', 'contact.html'));
 });
 app.get('/sitemap', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', 'sitemap.html'));
+    res.sendFile(path.join(__dirname, '/views', 'sitemap.html'));
 });
 
 app.get('/*', (req, res) => {
-    res.status(404).sendFile(path.join(__dirname, '/public', '404.html'));
+    res.status(404).sendFile(path.join(__dirname, '/views', '404.html'));
 });
 
 app.listen(port, () => {
