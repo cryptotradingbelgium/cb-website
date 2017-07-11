@@ -92,29 +92,50 @@ section{
 
 //Navbar 
 .navbar{
-    @include flex-row-vertical_center;
 
     position:               absolute;
     top:                    0;
     width:                  100%;
-    z-index:                3;
-    min-height:             50px;
+    z-index:                999;
+    height:                 inherit;
+
+
+
+    .container{
+
+        @include flex-row-vertical_center;
+
+        margin:             auto;
+        height:             50px;
+    }
 
     &--link{
         color:              $cl-light;
-        font-size:          20px;
+        font-size:          1.1em;
         font-weight:        800;
+        text-shadow:        0 0 5px rgba(0,0,0,.85);
+
         &:hover{
-            color:              $cl-attn;
-        };
-    };
+            border-bottom:  5px solid $cl-attn;
+        }
+
+    }
+
+    &--img-link{
+        display:        flex;
+        align-items:    center;
+    }
+
     &--item{
+
         padding:            0 20px;
         font-family:        $font-head;
         text-transform:     uppercase;
+
         &__right{
             margin-left:    auto;
         }
+
     }
 }
 
