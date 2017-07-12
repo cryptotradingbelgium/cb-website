@@ -11,12 +11,12 @@
 
 // Fonts
 $font-head:   'Qanelas', serif;
-$font-sub:    'Ubuntu', sans-serif;
-$font-text:   'Ubuntu', sans-serif;
+$font-sub:    'Roboto', sans-serif;
+$font-text:   'Roboto', sans-serif;
 $font-mono:   monospace;
 
 //Colors:
-$cl-dark:   #525252;
+$cl-dark:   #333333;
 $cl-attn:   #03a9f4;
 $cl-green:  #00b159;
 $cl-light:  #FFFFFF;
@@ -111,7 +111,7 @@ section{
 
     &--link{
         color:              $cl-light;
-        font-size:          1.1em;
+        font-size:          1.0em;
         font-weight:        800;
         text-shadow:        0 0 5px rgba(0,0,0,.85);
 
@@ -139,14 +139,35 @@ section{
     }
 }
 
-//Header 
-.header{
+//Header
+
+header{
+
+    @include flex-row-vertical_center;
 
     background:             url('/images/ctb_home_hero_500.jpg') no-repeat center;
     background-size:        cover;
     height:                 400px;
-    display:                flex;
-    align-items:            center;
+
+
+
+    .header--color-overlay{
+
+      width:                100%;
+      height:               100%;
+      background-color:     rgba(0,0,0,0.2);
+
+    }
+
+    .container{
+
+      @include flex-row-vertical_center;
+
+      height:             50%;
+      align-content:      space-between;
+
+
+    }
 
     .header--caption{
 
@@ -156,7 +177,9 @@ section{
         display:            flex;
         flex-direction:     column;
         align-content:      center;
-        margin: 0; padding: 0;
+        margin:             0;
+        padding:            0;
+        font-size:          1.4em;
 
     }
 
@@ -170,13 +193,123 @@ section{
 
     }
 
+    .header--slack-wrap{
+
+        margin-left: auto;
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+
+        form{
+
+            margin:0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .slack-wrap__section{
+
+                @include flex-row-vertical_center;
+                flex: 1;
+
+            }
+
+            label{
+                margin: 0;
+                color: #000;
+                font-size: 0.8em;
+                font-weight: bolder;
+                padding: 0 0 0 5px;
+                height: 25px;
+
+                a{
+                    color: $cl-attn;
+                    font-size: 1em;
+                }
+            }
+
+            input[type=email]{
+
+                width:            calc(100% - 50px);
+                height:           40px;
+                padding-left:     15px;
+                border:           none;
+                border-bottom:    1px solid #ccc;
+                outline:          none;
+                font-size:        0.7em;
+
+                &:focus{
+                    border:none;
+                    border-bottom: 1px solid #f00;
+                }
+
+            }
+
+            button{
+
+                margin-left:      auto;
+                height:           30px;
+                width:            30px;
+                border:           none;
+                background:       #d50000 url("/images/send.png") no-repeat center;
+                background-size:  75%;
+                border-radius:    50%;
+                padding-right:    5px;
+                cursor:           pointer;
+
+            }
+
+        }
+
+    }
+
     @media (min-width: 500px) {
+
         background-image:   url('/images/ctb_home_hero_900.jpg');
+
     }
 
     @media (min-width: 900px){
-        background-image: url('/images/ctb_home_hero.jpg');
 
+        background-image:   url('/images/ctb_home_hero.jpg');
+        padding-top:        0px;
+
+        .header--caption{
+
+          font-size:           2em;
+
+        }
+
+        .header--slack-wrap {
+
+          margin-left:      auto;
+          width:            80%;
+          padding:          30px;
+
+          form{
+
+            label{
+              font-size:      0.95em;
+              height:         35px;
+            }
+
+            input[type=email] {
+              width:          calc(100% - 100px);
+              font-size:      0.8em;
+            }
+
+            button{
+              width:          40px;
+              height:         40px;
+            }
+
+          }
+
+        }
 
     }
 
@@ -184,12 +317,43 @@ section{
 
 //Intro
 #intro{
+
+    padding: 100px 0;
+  padding-bottom: 50px;
+
+    .intro--section {
+
+      display: flex;
+      align-items: flex-start;
+      align-content: space-around;
+      margin-bottom: 50px;
+
+      .intro--text-wrap{
+        width: calc(100% - 85px);
+        margin-left: auto;
+      }
+
+    }
+
+    h2{
+      width: 100%;
+      font-family: $font-head;
+      font-size: 1.25em;
+      color: $cl-attn;
+      margin: 0;
+      padding: 0;
+    }
+
     .intro-image{
-        width:          75%;
+        width:          50px;
         height:         auto;
+
+
     }
     .intro-text{
-        padding:        5px 20px; 
+        width:          75%;
+        line-height:    1.7em;
+        font-size: 0.90em;
     }
 }
 

@@ -36,3 +36,11 @@
     width:          100%;
 }
 
+.r-col-50{
+
+    width:          100%;
+
+    @media (min-width: 720px) {
+        width:      50%;
+    }
+}
