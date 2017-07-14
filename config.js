@@ -1,7 +1,7 @@
 var config = {};
 
 config.slack = {
-    'token' : '<SLACKTOKEN>',
+    'token' : '<SLACKTOKENx>',
     'pretty' : 1
 }
 
