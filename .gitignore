@@ -4,3 +4,6 @@
 
 # Disregard sass-cache
 /.sass-cache
+
+# Config file for slack integration
+config.js

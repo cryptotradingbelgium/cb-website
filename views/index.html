@@ -4,6 +4,7 @@
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
         <meta name='application-name' content='CryptoTradingWebsite'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <title> Crypto Trading Belgium </title>
         <base href='/'>
@@ -17,8 +18,9 @@
         <link rel='stylesheet' href='styles/ctb_style.css' type='text/css' media='all' />
     </head>
 
-    <body>
+    <body >
 
+            <!--
         <nav class='navbar'>
 
             <div class='navbar'>
@@ -30,17 +32,19 @@
                     <div class='navbar--item navbar--item__right'>
                         <a href='http://51.255.170.22:4567' target="_blank" class='navbar--link'>ICO</a>
                     </div>
+
                     <div class='navbar--item navbar--item'>
                         <a href='/about' class='navbar--link'>About</a>
                     </div>
                     <div class='navbar--item navbar--item'>
                         <a href='/contact' class='navbar--link'>Contact</a>
                     </div>
+
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
-        <header>
+        <header id="home">
             <div class='container'>
                 <div class="r-col-50">
                     <h1 class='header--caption'>
@@ -62,8 +66,40 @@
             </div>
         </header>
 
+        <nav class="menu">
+            <div id="nav">
+                <div class="nav-item"><a href="#home">Home</a></div>
+                <div class="nav-item"><a href="#intro">About</a></div>
+                <div class="nav-item"><a href="#slack">Sign me up !</a></div>
+                <div class="nav-item"><a href='http://51.255.170.22:4567' target="_blank">ICO</a></div>
+            </div>
+            <div class="nav_indication">
+                <div id="progress-bar"></div><div id="circle"></div>
+            </div>
+
+        </nav>
+
+
         <section id='intro'>
             <div class='container'>
+                <div class="row">
+                    <div class='col-sm-full col-100 intro--section'>
+                        <img class='about-image' src='images/ctb_logo.jpg' alt='community'>
+                        <p>
+                            We are a community of <b>cryptocurrency</b> enthousiasts, both senior and junior members.
+                            Some of us focus on trading, some of us are developers looking to stay in touch with
+                            emerging technogie, and others are just curious.
+                        </p>
+                        <p>
+                            We talk about new projects, ICOs. We discuss general blockchain technology.
+                            Creative members talk about ideas and possibilities of new applications.
+                            We follow the exciting <b>new developments</b> in cryptocurrencies.
+                        </p>
+                        <p> No entry barriers, no knowledge required. </p>
+                    </div>
+
+                </div>
+
                 <div class="row">
                     <div class='col-sm-full col-33 intro--section'>
                         <img class='intro-image' src='images/meeting.png' alt='invest'>
@@ -119,10 +155,13 @@
                 </div>
             </div>
         </section>
+
+
         <footer class='footer'>
             <div class='container'>
                 <a href='sitemap'>Sitemap</a>   |   © 2017 All rights reserved
             </div>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>

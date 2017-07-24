@@ -8,7 +8,7 @@ let app         = express();
 let request     =    require('request');
 let config      =   require('./config');
 
-const port      = process.env.PORT || 4000;
+const port      = process.env.PORT || 3000;
 
 app.use(morgan('dev'));
 
@@ -34,6 +34,10 @@ app.get('/contact', (req, res) => {
 });
 app.get('/sitemap', (req, res) => {
     res.sendFile(path.join(__dirname, '/views', 'sitemap.html'));
+});
+
+app.get('/sw.js', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public', 'sw.js'));
 });
 
 

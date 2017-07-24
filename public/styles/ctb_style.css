@@ -152,7 +152,10 @@ header {
   flex-direction: row;
   background: url("/images/ctb_home_hero_500.jpg") no-repeat center;
   background-size: cover;
-  height: 400px; }
+  height: 350px;
+  -webkit-transition: width 2s;
+  /* Safari */
+  transition: width 2s; }
   header .header--color-overlay {
     width: 100%;
     height: 100%;
@@ -173,7 +176,7 @@ header {
     box-sizing: border-box;
     -webkit-flex-direction: row;
     flex-direction: row;
-    height: 50%;
+    height: 60%;
     align-content: space-between; }
   header .header--caption {
     color: #FFFFFF;
@@ -197,7 +200,6 @@ header {
     padding: 20px;
     height: auto;
     background-color: #fff;
-    border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75); }
     header .header--slack-wrap form {
       margin: 0;
@@ -242,7 +244,7 @@ header {
         font-size: 0.7em; }
         header .header--slack-wrap form input[type=email]:focus {
           border: none;
-          border-bottom: 1px solid #f00; }
+          border-bottom: 1px solid #d50000; }
       header .header--slack-wrap form button {
         margin-left: auto;
         height: 30px;
@@ -276,9 +278,76 @@ header {
           width: 40px;
           height: 40px; } }
 
+nav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  position: relative; }
+  nav #nav {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    background-color: #eee; }
+  nav .nav-item {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center; }
+    nav .nav-item a {
+      color: #000;
+      font-size: 0.85em;
+      width: 100%;
+      height: 50px;
+      line-height: 50px; }
+    nav .nav-item .active {
+      color: #d50000; }
+  nav .nav_indication {
+    width: 100%;
+    height: 3px; }
+    nav .nav_indication #progress-bar {
+      height: 100%;
+      background-color: #d50000;
+      float: left; }
+    nav .nav_indication #circle {
+      margin-top: -4px;
+      background-color: #fff;
+      border: 3px solid #d50000;
+      border-radius: 50%;
+      width: 11px;
+      height: 11px;
+      float: left; }
+
 #intro {
-  padding: 100px 0;
-  padding-bottom: 50px; }
+  padding: 100px 0 50px;
+  height: 1000px; }
   #intro .intro--section {
     display: flex;
     align-items: flex-start;
@@ -298,13 +367,17 @@ header {
     width: 50px;
     height: auto; }
   #intro .intro-text {
-    width: 75%;
+    width: 100%;
     line-height: 1.7em;
     font-size: 0.90em; }
+  @media (min-width: 900px) {
+    #intro .intro-text {
+      width: 75%; } }
 
 #slack {
   background-color: #333333;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  height: 1000px; }
 
 .slack-logo {
   padding: 10px;
@@ -319,9 +392,10 @@ header {
   margin: 5px 0; }
 
 .about-image {
-  width: 100%;
+  width: 150px;
+  height: 150px;
   height: auto;
-  border-radius: 7px; }
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); }
 
 .about--description {
   text-align: justify; }
