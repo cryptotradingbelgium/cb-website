@@ -58,16 +58,16 @@ app.post('/join', (req, res) => {
                 console.log(error)
             } //etc
         }
-
+        /*
         if (response.body.ok){
             res.send(200, 'Check your email!')
         }else{
             res.send(500, 'Something went wrong!')
-        }
+        }*/
 
     });
 
-    res.sendFile(path.join(__dirname, '/views', '404.html'));
+    res.sendFile(path.join(__dirname, '/views', 'index.html'));
 });
 
 app.get('/*', (req, res) => {

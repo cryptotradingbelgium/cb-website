@@ -21,7 +21,7 @@ $cl-attn:   #03a9f4;
 $cl-green:  #00b159;
 $cl-light:  #FFFFFF;
 $cl-yellow: #B58900;
-$cl-red:    #d50000;
+$cl-red:    #FF6276;
 
 @import 'flex';
 @import 'grid';
@@ -323,12 +323,11 @@ nav{
 
     flex-direction:             column;
     width:                      100%;
-    position: relative;
+    position:                   relative;
 
     #nav{
 
         @include flex-row-vertical_center;
-
 
         width:                  100%;
         background-color:       #eee ;
@@ -391,13 +390,83 @@ nav{
 
 }
 
+.section--heading{
+
+    @include flex-row-vertical_center;
+
+    margin-bottom:              50px;
+    margin-top:                 50px;
+    align-items:                flex-start;
+
+    .section-header-line{
+
+        height:                 1px;
+        width:                  10%;
+        background-color:       #111;
+
+    }
+
+    h2{
+
+        padding:                0;
+        margin:                 0 0 0 25px;
+        color:                  #111;
+        font-family:            "Qanelas", serif;
+        line-height:            0px;
+
+    }
+
+}
 
 
 //Intro
 #intro{
 
-    padding:                100px 0 50px;
-    height:                 1000px;
+    padding:                50px 0 50px;
+
+    .about-image{
+        position: relative;
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: block;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    }
+
+    .intro{
+
+
+        &--main-introduction{
+
+            margin-top: 50px;
+            margin-bottom: 100px;
+
+            .text--wrap{
+                margin-top: 75px;
+                width: 100%;
+                line-height: 1.5em;
+                font-size: 1.2em;
+
+            }
+
+        }
+
+        @media (min-width: 900px){
+
+            &--main-introduction{
+
+                .text--wrap{
+                    margin-top: 0px;
+                    width:      40%;
+                    padding-left: 25px;
+                }
+            }
+
+
+
+        }
+
+    }
 
     .intro--section {
 
@@ -407,16 +476,16 @@ nav{
       margin-bottom:        50px;
 
       .intro--text-wrap{
-        width:              calc(100% - 85px);
+        width:              calc(90% - 50px);
         margin-left:        auto;
       }
 
     }
 
-    h2{
+    h3{
       width:                100%;
       font-family:          $font-head;
-      font-size:            1.25em;
+      font-size:            1.1em;
       color:                $cl-attn;
       margin:               0;
       padding:              0;
@@ -431,7 +500,7 @@ nav{
     .intro-text{
         width:              100%;
         line-height:        1.7em;
-        font-size:          0.90em;
+        font-size:          0.80em;
     }
 
     @media (min-width: 900px){
@@ -470,12 +539,7 @@ nav{
     }
 }
 
-.about-image{
-    width: 150px;
-    height: 150px;
-    height: auto;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.50);
-}
+
 .about--description{
     text-align: justify;
 }

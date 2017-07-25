@@ -1,20 +1,19 @@
+
+
 {
   "name": "ctb-website",
   "version": "1.0.0",
   "description": "Crypto Trading Belgium Homepage",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Crypto Trading Belgium",
+  "author": "Amnesiacu",
   "license": "ISC",
   "dependencies": {
     "express":  "^4.15.3",
     "morgan":   "^1.8.2",
-    "cfenv": "1.0.x",
-    "request": "^2.81.0",
-    "body-parser" : "^1.17.2"
-  },
-  "engines": {
-    "node": "6.x"
+    "request":   "latest",
+    "body-parser":   "latest"
   }
 }
