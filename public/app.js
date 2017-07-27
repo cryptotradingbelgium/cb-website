@@ -1,27 +1,32 @@
-
+// app.js
+// Written by tompl
 
 scrollIntervalID = setInterval(stickIt, 10);
 var global_position = 0;
 
 function stickIt() {
+    var orgElementPos= $('.original').offset();
 
-    var orgElementPos = $('.original').offset();
-    orgElementTop = orgElementPos.top;
+    if (orgElementPos){
+        orgElementTop = orgElementPos.top;
 
-    if ($(window).scrollTop() >= (orgElementTop)) {
-        // scrolled past the original position; now only show the cloned, sticky element.
-
-        // Cloned element should always have same left position and width as original element.
-        orgElement = $('.original');
-        coordsOrgElement = orgElement.offset();
-        leftOrgElement = coordsOrgElement.left;
-        widthOrgElement = orgElement.css('width');
-        $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-        $('.original').css('visibility','hidden');
-    } else {
-        // not scrolled past the menu; only show the original menu.
-        $('.cloned').hide();
-        $('.original').css('visibility','visible');
+        if ($(window).scrollTop() >= (orgElementTop)) {
+            // scrolled past the original position; now only show the cloned, sticky element.
+            // Cloned element should always have same left position and width as original element.
+            orgElement = $('.original');
+            coordsOrgElement = orgElement.offset();
+            leftOrgElement = coordsOrgElement.left;
+            widthOrgElement = orgElement.css('width');
+            $('.cloned').css('left',leftOrgElement+'px')
+                .css('top',0)
+                .css('width',widthOrgElement)
+                .show();
+            $('.original').css('visibility','hidden');
+        } else {
+            // not scrolled past the menu; only show the original menu.
+            $('.cloned').hide();
+            $('.original').css('visibility','visible');
+        }
     }
 }
 
@@ -36,16 +41,9 @@ function onScroll(event){
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
 
-        console.log(refElement.position().top, refElement.position().top + refElement.height())
-        console.log(scrollPos)
-        console.log(refElement.position().top <= scrollPos, refElement.position().top + refElement.height() > scrollPos)
-        console.log()
-
-
         let section_percentage;
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             var position = $(this).parent().position();
-            console.log(position)
             currLink.addClass("active");
 
             section_percentage = Math.round(currLink.position().left / $(window).width() * 100) + 12.5
@@ -55,7 +53,6 @@ function onScroll(event){
             if (section_percentage != global_position) {
                 global_position = section_percentage
                 parent = '.' + currLink.parent().parent().parent()[0].className.split(' ')[1]
-                console.log(parent)
 
                 $(parent + ' #progress-bar').animate({'width': section_percentage + '%'});
             }
@@ -63,15 +60,21 @@ function onScroll(event){
         } else {
             currLink.removeClass("active");
         }
-        console.log('\n')
     });
 }
 
 $(document).ready(function () {
     // Create a clone of the menu, right next to original.
-    $('.menu').addClass('original').clone().insertAfter('.menu')
-        .addClass('cloned').css('position','fixed').css('top','0')
-        .css('margin-top','0').css('z-index','500').removeClass('original').hide();
+    $('.menu').addClass('original')
+        .clone()
+        .insertAfter('.menu')
+        .addClass('cloned')
+        .css('position','fixed')
+        .css('top','0')
+        .css('margin-top','0')
+        .css('z-index','500')
+        .removeClass('original')
+        .hide();
 
     $(document).on("scroll", onScroll);
 
@@ -100,7 +103,5 @@ $(document).ready(function () {
 });
 
 $(window).on('load', function(){
-
     onScroll();
-
 });

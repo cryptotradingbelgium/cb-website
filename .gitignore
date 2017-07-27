@@ -1,6 +1,11 @@
+#ignore IDE files
+.idea
+
+# ignore npm log
+npm-debug.log
+
 # Disregard node_modules
 /node_modules
-.idea
 
 # Disregard sass-cache
 /.sass-cache
