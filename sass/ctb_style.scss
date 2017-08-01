@@ -9,19 +9,26 @@
     src: url("/fonts/Qanelas.otf") format("opentype");
 }
 
+@font-face {
+    font-family: Klasik;
+    src: url("/fonts/Klasik Regular.otf");
+}
+
 // Fonts
-$font-head:   'Qanelas', serif;
-$font-sub:    'Roboto', sans-serif;
-$font-text:   'Roboto', sans-serif;
-$font-mono:   monospace;
+$font-head:         'Qanelas', serif;
+$font-subtitle:     'Klasik', serif;
+$font-sub:          'Roboto', sans-serif;
+$font-text:         'Roboto', sans-serif;
+$font-mono:         monospace;
 
 //Colors:
-$cl-dark:   #333333;
-$cl-attn:   #03A9f4;
-$cl-green:  #00B159;
-$cl-light:  #FFFFFF;
-$cl-yellow: #B58900;
-$cl-red:    #FF6276;
+$cl-dark:           #2C3E50;
+$cl-attn:           #2980B9;
+$cl-green:          #00B159;
+$cl-light:          #FFFFFF;
+$cl-yellow:         #B58900;
+$cl-red:            #E74C3C;
+$cl-light2:         #ECF0F1;
 
 @import 'flex';
 @import 'grid';
@@ -188,11 +195,11 @@ header{
 
     .caption--underline{
 
-        height:             10px;
+        height:             8px;
         background-color:   $cl-attn;
         width:              25%;
         border-radius:      10px;
-        margin-top:         -12px;
+        margin-top:         -10px;
 
     }
 
@@ -330,7 +337,7 @@ nav{
         @include flex-row-vertical_center;
 
         width:                  100%;
-        background-color:       #eee ;
+        background-color:       $cl-light2;
     }
 
     .nav-item{
@@ -343,7 +350,7 @@ nav{
 
         a{
 
-            color:              $cl-dark;
+            color:              #000;
             font-size:          0.85em;
             width:              100%;
             height:             50px;
@@ -394,9 +401,10 @@ nav{
 
     @include flex-row-vertical_center;
 
-    margin-bottom:              50px;
+    margin-bottom:              100px;
     margin-top:                 50px;
     align-items:                flex-start;
+
 
     .section-header-line{
 
@@ -422,13 +430,16 @@ nav{
 //Intro
 #intro{
 
+    padding-top: 50px;
+
+
     .about-image{
         position: relative;
         width: 50%;
         height: auto;
         margin: auto;
         display: block;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+
     }
 
     .intro{
@@ -468,10 +479,12 @@ nav{
 
     .intro--section {
 
-      display:              flex;
-      align-items:          flex-start;
-      align-content:        space-around;
-      margin-bottom:        50px;
+        display:                flex;
+        align-items:            flex-start;
+        align-content:          space-around;
+        margin-bottom:          50px;
+        background-color:       #fff;
+
 
       .intro--text-wrap{
         width:              calc(90% - 50px);
@@ -482,8 +495,9 @@ nav{
 
     h3{
       width:                100%;
-      font-family:          $font-head;
-      font-size:            1.1em;
+      font-family:          $font-subtitle;
+        font-weight:        bold;
+      font-size:            1.2em;
       color:                $cl-attn;
       margin:               0;
       padding:              0;
