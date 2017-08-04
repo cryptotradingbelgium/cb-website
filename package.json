@@ -1,5 +1,3 @@
-
-
 {
   "name": "ctb-website",
   "version": "1.0.0",
@@ -11,9 +9,9 @@
   "author": "Amnesiacu",
   "license": "ISC",
   "dependencies": {
-    "express":  "^4.15.3",
-    "morgan":   "^1.8.2",
-    "request":   "latest",
-    "body-parser":   "latest"
+    "body-parser": "latest",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "request": "latest"
   }
 }

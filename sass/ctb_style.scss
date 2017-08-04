@@ -88,7 +88,7 @@ body{
 }
 
 section{
-    padding:        20px 0;
+    padding:        35px 0;
 }
 
 .text-center{
@@ -337,7 +337,8 @@ nav{
         @include flex-row-vertical_center;
 
         width:                  100%;
-        background-color:       $cl-light2;
+        background-color:       $cl-dark;
+        opacity:                0.8;
     }
 
     .nav-item{
@@ -349,9 +350,8 @@ nav{
         align-items:            center;
 
         a{
-
-            color:              #000;
-            font-size:          0.85em;
+            color:              $cl-light2;
+            font-size:          1em;
             width:              100%;
             height:             50px;
             line-height:        50px;
@@ -359,9 +359,7 @@ nav{
         }
 
         .active{
-
             color:              $cl-red;
-
         }
 
     }
@@ -401,11 +399,6 @@ nav{
 
     @include flex-row-vertical_center;
 
-    margin-bottom:              100px;
-    margin-top:                 50px;
-    align-items:                flex-start;
-
-
     .section-header-line{
 
         height:                 1px;
@@ -430,61 +423,28 @@ nav{
 //Intro
 #intro{
 
-    padding-top: 50px;
-
-
     .about-image{
-        position: relative;
-        width: 50%;
-        height: auto;
-        margin: auto;
-        display: block;
-
+        height: 200px;
+        width:  200px;
     }
 
     .intro{
 
 
         &--main-introduction{
-
-            margin-top: 50px;
-            margin-bottom: 100px;
+            width:      70%;
+            margin:     auto;
+            margin-bottom: 30px;
 
             .text--wrap{
-                margin-top: 75px;
-                width: 100%;
-                line-height: 1.5em;
-                font-size: 1.2em;
-
+                line-height:    1.5em;
+                font-size:      1.2em;
             }
-
-        }
-
-        @media (min-width: 900px){
-
-            &--main-introduction{
-
-                .text--wrap{
-                    margin-top: 0px;
-                    width:      40%;
-                    padding-left: 25px;
-                }
-            }
-
-
-
         }
 
     }
 
     .intro--section {
-
-        display:                flex;
-        align-items:            flex-start;
-        align-content:          space-around;
-        margin-bottom:          50px;
-        background-color:       #fff;
-
 
       .intro--text-wrap{
         width:              calc(90% - 50px);
@@ -535,13 +495,18 @@ nav{
 #slack{
     background-color: $cl-dark;
     color: $cl-light;
-    height: 1000px;
 }
 
 .slack-logo{
     padding:    10px;
     height:     150px;
     width:      auto;
+    &__small{
+        height:             25px;
+        width:              auto;
+        vertical-align:     middle;
+        margin-right:        10px;
+    }
 }
 
 
@@ -549,6 +514,7 @@ nav{
 .footer{
     padding:            20px 0;
     font-size:          small;
+    height:             900px;
 }
 
 #about-intro{
@@ -559,6 +525,9 @@ nav{
 
 
 .about--description{
+    text-align: justify;
+}
+.text-justify{
     text-align: justify;
 }
 
@@ -595,4 +564,12 @@ nav{
 
 .slack-header{
     @include flex-row-vertical_center;
+}
+.padded{
+    padding: 0 20px;
+}
+
+.project-image{
+    width: 80%;
+    border-radius: 7px;
 }

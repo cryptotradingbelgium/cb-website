@@ -19,31 +19,6 @@
     </head>
 
     <body >
-    <!--
-        <nav class='navbar'>
-
-            <div class='navbar'>
-                <div class="container">
-                        <a class='navbar--img-link' href="/">
-                            <img src="images/ctb_logo.jpg" height="40px">
-                        </a>
-
-                    <div class='navbar--item navbar--item__right'>
-                        <a href='http://51.255.170.22:4567' target="_blank" class='navbar--link'>ICO</a>
-                    </div>
-
-                    <div class='navbar--item navbar--item'>
-                        <a href='/about' class='navbar--link'>About</a>
-                    </div>
-                    <div class='navbar--item navbar--item'>
-                        <a href='/contact' class='navbar--link'>Contact</a>
-                    </div>
-
-                </div>
-            </div>
-        </nav> 
-    -->
-
         <header id="home">
             <div class='container'>
                 <div class="r-col-50">
@@ -55,9 +30,12 @@
                 <div class="r-col-50">
                     <div class="header--slack-wrap">
                         <form action="/join" method="post">
-                            <label for="slack_email" class="static-value"> Join our Slack community! </label>
+                            <label for="slack_email" class="static-value"> 
+                                <img class='slack-logo__small' src='images/ctb_slack_logo.png' alt='Slack Logo'>
+                                <span> Sluit je aan bij onze gemeenschap! </span>
+                            </label>
                             <div class="slack-wrap__section">
-                                <input id="slack_email" name="email" placeholder="Enter your e-mail address" required="" type="email">
+                                <input id="slack_email" name="email" placeholder="Vul je email in" required="" type="email">
                                 <button class="" type="submit"></button>
                             </div>
                         </form>
@@ -68,80 +46,95 @@
 
         <nav class="menu">
             <div id="nav">
-                <div class="nav-item"><a href="#home">Home</a></div>
-                <div class="nav-item"><a href="#intro">About</a></div>
-                <div class="nav-item"><a href="#slack">Sign me up</a></div>
-                <div class="nav-item"><a href='http://51.255.170.22:4567' target="_blank">ICO</a></div>
+                <div class="nav-item"><a href="#home"> Home </a></div>
+                <div class="nav-item"><a href="#intro"> Over Ons </a></div>
+                <div class="nav-item"><a href="#slack"> Registreren </a></div>
+                <div class="nav-item"><a href="#projecten"> Projecten </a></div>
             </div>
             <div class="nav_indication">
                 <div id="progress-bar"></div><div id="circle"></div>
             </div>
-
         </nav>
 
 
         <section id='intro'>
+            <div class="container">
+                <h1 class="text-center">Over Ons</h1>
+                <div class="section--heading intro--main-introduction">
+                    <div class="col-sm-full col-50 text-center">
+                        <img class='about-image' src='images/logo.png' alt='community'>
+                    </div>
 
-            <div class="section--heading intro--headerstyle">
-                <div class="section-header-line"></div>
-                <h2>What do we do?</h2>
+                    <div class="col-sm-full col-50 text--wrap text-justify">
+                        <p>
+                            Wij zijn een groep van <b>cryptocurrency</b> enthousiastelingen, met zowel ervaren als beginnende leden, en samen 
+                            willen we <b>discussieren</b> over de nieuwe <b>ontwikkelingen</b> op de markt, meningen geven over interessante <b>investeringen</b>, 
+                            en algemene <b>ondersteuning</b> voor mensen die nog niet vertrouwd zijn in deze nieuwe markten.
+                        </p>
+                        <p>
+                            <b> Geen speciale vereisten, en al geen voorkennis nodig!</b>
+                        </p>
+                    </div>
+                </div>
             </div>
-
             <div class='container'>
                 <div class="row">
                     <div class='col-sm-full col-33 intro--section'>
-                        <img class='intro-image' src='images/meeting.png' alt='invest'>
+                        <div class="text-center">
+                            <img class='intro-image' src='images/meeting.png' alt='invest'>
+                        </div>
+                        <h3 class="text-center">Verhandelen</h3>
                         <div class="intro--text-wrap">
-                            <h3>Trading</h3>
-                            <p class='intro-text'>
-                                We are a <b>collection</b> of junior, and senior <b>traders</b> exchanging <b>tips and tricks</b> while we talk about our favorite cryptocurrencies.
+                            <p class='intro-text text-justify'>
+                                Sommigen legen zich toe op het verhandelen van cryptocurrency, op verschillende exchanges (ruil-platformen) houden we de
+                                prijzen in de gaten, en volgen alle nieuwe wendingen van de markten.
                             </p>
                         </div>
                     </div>
                     <div class=' col-sm-full col-33 intro--section'>
-                        <img class='intro-image' src='images/euro.png' alt='Investment Analysis'>
+                        <div class="text-center">
+                            <img class='intro-image' src='images/euro.png' alt='Investment Analysis'>
+                        </div>
+                        <h3 class="text-center">Analyse</h3>
                         <div class="intro--text-wrap">
-                            <h3>Investment Analysis</h3>
-                            <p class='intro-text'>
-                                New <b>ICO</b>? Ask and read about it in our channels.
+                            <p class='intro-text text-justify'>
+                                De technology, het team, de evolutie van de prijzen, de veiligheid, de geschiedenis, de adoptie van het gebruik, zijn maar 
+                                enkele facetten die bijdragen tot het slagen van een nieuwe coin, wij proberen deze samen correct in te schatten. 
                             </p>
                         </div>
                     </div>
                     <div class='col-sm-full col-33 intro--section'>
-                        <img class='intro-image' src='images/network.png' alt='Blockchain Technology'>
+                        <div class="text-center">
+                            <img class='intro-image' src='images/network.png' alt='Blockchain Technology'>
+                        </div>
+                        <h3 class="text-center">Blockchain</h3>
                         <div class="intro--text-wrap">
-                        <h3>Blockchain Technology</h3>
-                        <p class='intro-text'>
-                            We <b>analyse</b> the <b>technology</b>, read the <b>whitepaper</b> and try to judge the merit and <b>value</b> of new projects.
-                        </p>
+                            <p class='intro-text text-justify'>
+                                De techneuten onder ons spitten dieper in de onderliggende technologie en volgen de wendingen in de blockchain wereld op.
+                                Gaande van interessante toepassingen in AI, public en private ledgers, developement aan nieuwe coins, nieuwe netwerken, 
+                                nieuwe protocollen, noem maar op!
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row intro--main-introduction">
-                    <div class="col-sm-full col-50 ">
-                        <img class='about-image' src='images/logo.png' alt='community'>
-                    </div>
-
-                    <div class="col-sm-full col-50 text--wrap">
-                        <p>
-                            We are a community of <b>cryptocurrency</b> enthousiasts, both senior and junior members.
-                            Some of us focus on trading, some of us are developers looking to stay in touch with
-                            emerging technogie, and others are just curious.
-                        </p>
-                        <p><b>No entry barriers, no knowledge required.</b></p>
-                    </div>
-                </div>
             </div>
 
         </section>
         <section id='slack'>
             <div class='container'>
-                <div class='row'>
-                    <div class='col-sm-full col-50'>
-                        <h1> Join us on Slack </h1>
-                        <p> Feel <b>free</b> to come and <b>join our community</b>.</p>
-                        <p>Talk and banter about cryptocurrencies, and read about your favorite coins. Want to know more about that latest <b>ICO</b>?</p> <p>Come ask us all about it.</p>
+                <h1 class="text-center">Sluit je aan op Slack</h1>
+                <div class='row__center'>
+                    <div class='col-sm-full col-50 padded text-justify'>
+                        <p>
+                             Wees vrij om ons een bezoekje te komen brengen op <b>Slack</b>
+                        </p>
+                        <p>
+                            Praten, discussieren, over ons favoriete onderwerp - cryptocurrency! Er is ruimte voor serieuze gesprekken, maar ook voor informele banter.
+                        </p>
+                        <p>
+                            Lezen over je favoriete coins? Gelezen over een nieuwe ICO, waar je graag met iemand mee wil ping-pongen? Het kan allemaal.
+                        </p>
                     </div>
                     <div class='col-sm-full col-50 text-center'>
                         <img class='slack-logo' src='images/ctb_slack_logo.png' alt='Slack Logo'>
@@ -151,7 +144,7 @@
                                     Download Slack
                                 </a>
                                 <a class='btn btn--green btn-sm-full' href='https://join.slack.com/cryptotradingbelgium/shared_invite/MjAyMDM1NTg3MDA4LTE0OTgyMzQwMjMtZTBlODFjYjRlYQ'>
-                                    Find us on Slack
+                                    Naar de groep!
                                 </a>
                             </div>
                         </div>
@@ -160,8 +153,58 @@
             </div>
         </section>
 
+        <section id='projecten'>
+            <div class='container'>
+                <h1 class="text-center">Projecten</h1>
+                <div class='row'>
+                    <div class='col-sm-full col-33 padded'>
+                        <h2 class="text-center">Slack</h2>
+                        <div class="text-center">
+                            <img class="project-image" src="images/development_700.jpg">
+                        </div>
+                        <p class="text-justify">
+                            In onze slack groep kan je ook lid worden van onze github repository, waar 
+                            er kan gewerkt worden aan onze interne tipping bot, ook onze website is beschikbaar op github.
+                        </p>
+                        <p class="text-justify">
+                            Naast de tippingbot maken we ook werk van de Slack zo gebruiksvriendelijk mogelijk te maken.
+                        </p>
+                    </div>
+                    <div class='col-sm-full col-33 padded'>
+                        <h2 class="text-center">Kennis delen</h2>
+                        <div class="text-center">
+                            <img class="project-image" src="images/knowledge_700.jpg">
+                        </div>
+                        <p class="text-justify">
+                            Gaandeweg leggen we onze kennisdatabank aan, waar leden kunnen bladeren doorheen verschillende gerelateerde 
+                            onderwerpen, gaande van security (wallets, VPN), trading (shorting, market, Technische Analyse), tot 
+                            technologische onderwerpen gaande over de wallets.
+                        </p>
+                        <p class="text-justify">
+                            Wanneer nieuwe ICO's uitkomen bespreken we het potentieel op onze interne fora.
+                        </p>
+                    </div>
+                    <div class='col-sm-full col-33 padded'>
+                        <h2 class="text-center">Events</h2>
+                        <div class="text-center">
+                            <img class="project-image" src="images/events_700.jpg">
+                        </div>
+                        <p class="text-justify">
+                            Voor zij die willen wordt er regelmatig samengekomen voor een face-to-face ontmoeting met verschillende leden. 
+                            Zowel om het gezicht achter de naam de te leren kennen, als wat informeler praten over crypto en te netwerken.
+                        </p>
+                        <div>
+                            <b>Volgende meeting</b>
+                        </div>
+                        <p>
+                            In planning
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer class='footer'>
+        <footer class='footer dark-section'>
             <div class='container'>
                 <a href='sitemap'>Sitemap</a>   |   © 2017 All rights reserved
             </div>
