@@ -11,6 +11,13 @@
     @include flex-row;
     width:          100%;
 }
+
+.row_h_center{
+    @include flex-row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width:          100%;
+}
 .row__center{
     @include flex-row-vertical_center;
     width:          100%;

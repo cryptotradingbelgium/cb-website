@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
     <head>
-		<meta charset='UTF-8' />
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
-        <meta name='application-name' content='CryptoBeleggers'/>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="application-name" content="CryptoBeleggers"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <title> Crypto Beleggers </title>
-        <base href='/'>
+        <base href="/">
 
-        <link rel='icon' 
-            sizes='192x192' href='images/logo_icon.png'>
-        <link rel='apple-touch-icon' 
-            sizes='128x128' href='images/logo_icon.png'>
+        <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
+        <link rel="apple-touch-icon" sizes="128x128" href="images/logo_icon.png">
 
-
-        <link rel='stylesheet' href='styles/ctb_style.css' type='text/css' media='all' />
+        <link rel="stylesheet" href="styles/ctb_style.css" type="text/css" media="all" />
     </head>
 
     <body >
         <header id="home">
-            <div class='container'>
-                <div class="r-col-50">
-                    <h1 class='header--caption'>
-                        <span>Welkom bij</span><span>Crypto Beleggers</span>
+            <div class="container">
+                <div class="col-20">
+                    <img class="headerLogo" src="images/logo/logo_200x200.png" alt="community">
+                </div>
+                <div class="col-30">
+                    <h1 class="header--caption">
+                        <span>Welkom bij</span> <span>Crypto Beleggers</span>
                     </h1>
                     <div class="caption--underline"></div>
                 </div>
@@ -31,10 +33,10 @@
                     <div class="header--slack-wrap">
                         <form action="/join" method="post">
                             <label for="slack_email" class="static-value"> 
-                                <img class='slack-logo__small' src='images/ctb_slack_logo.png' alt='Slack Logo'>
                                 <span> Join onze community! </span>
                             </label>
                             <div class="slack-wrap__section">
+                                <img class="slack-logo__small" src="images/logo/slack_25x25.png" alt="Slack Logo">
                                 <input id="slack_email" name="email" placeholder="Vul je email in" required="" type="email">
                                 <button class="" type="submit"></button>
                             </div>
@@ -57,15 +59,34 @@
         </nav>
 
 
-        <section id='intro'>
+        <section id="intro">
             <div class="container">
-                <h1 class="text-center">Over Ons</h1>
                 <div class="section--heading intro--main-introduction">
                     <div class="col-sm-full col-50 text-center">
-                        <img class='about-image' src='images/logo.png' alt='community'>
+                        <div class="row_h_center">
+                            <div class="text-center padded">
+                                <a href="https://www.linkedin.com/company/18388122/" target="_blank">
+                                    <img class="socialLogo" src="images/logo/linkedin_500x500.png" alt="community">
+                                </a>
+                                <p><b>LinkedIn</b></p>
+                            </div>
+                            <div class="text-center padded">
+                                <a href="https://medium.com/@cryptobeleggers" target="_blank">
+                                    <img class="socialLogo" src="images/logo/medium_500x500.png" alt="community">
+                                </a>
+                                <p><b>Medium (Blog)</b></p>
+                            </div>
+                            <div class="text-center padded">
+                                <a href="https://twitter.com/CryptoBeleggers" target="_blank">
+                                    <img class="socialLogo" src="images/logo/twitter_500x500.png" alt="community">
+                                </a>
+                                <p><b>Twitter</b></p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-sm-full col-50 text--wrap text-justify">
+                        <h1 class="text-center">Over Ons</h1>
                         <p>
                             Wij zijn een groep van <b>cryptocurrency</b> enthousiastelingen, met zowel ervaren als beginnende leden, en samen 
                             willen we <b>discussieren</b> over de nieuwe <b>ontwikkelingen</b> op de markt, meningen geven over interessante <b>investeringen</b>, 
@@ -77,39 +98,39 @@
                     </div>
                 </div>
             </div>
-            <div class='container'>
+            <div class="container">
                 <div class="row">
-                    <div class='col-sm-full col-33 intro--section'>
+                    <div class="col-sm-full col-33 intro--section">
                         <div class="text-center">
-                            <img class='intro-image' src='images/meeting.png' alt='invest'>
+                            <img class="intro-image" src="images/meeting.png" alt="invest">
                         </div>
                         <h3 class="text-center">Verhandelen</h3>
                         <div class="padded">
-                            <p class='padded text-justify'>
+                            <p class="padded text-justify">
                                 Sommigen leggen zich toe op het verhandelen van cryptocurrency, op verschillende exchanges (ruil-platformen) houden we de
                                 prijzen in de gaten, en volgen alle nieuwe wendingen van de markten.
                             </p>
                         </div>
                     </div>
-                    <div class=' col-sm-full col-33 intro--section'>
+                    <div class=" col-sm-full col-33 intro--section">
                         <div class="text-center">
-                            <img class='intro-image' src='images/euro.png' alt='Investment Analysis'>
+                            <img class="intro-image" src="images/euro.png" alt="Investment Analysis">
                         </div>
                         <h3 class="text-center">Analyse</h3>
                         <div class="padded">
-                            <p class='padded text-justify'>
+                            <p class="padded text-justify">
                                 De technology, het team, de evolutie van de prijzen, de veiligheid, de geschiedenis, de adoptie van het gebruik, zijn maar 
                                 enkele facetten die bijdragen tot het slagen van een nieuwe coin, wij proberen deze samen correct in te schatten. 
                             </p>
                         </div>
                     </div>
-                    <div class='col-sm-full col-33 intro--section'>
+                    <div class="col-sm-full col-33 intro--section">
                         <div class="text-center">
-                            <img class='intro-image' src='images/network.png' alt='Blockchain Technology'>
+                            <img class="intro-image" src="images/network.png" alt="Blockchain Technology">
                         </div>
                         <h3 class="text-center">Blockchain</h3>
                         <div class="padded">
-                            <p class='padded text-justify'>
+                            <p class="padded text-justify">
                                 De techneuten onder ons spitten dieper in de onderliggende technologie en volgen de wendingen in de blockchain wereld op.
                                 Gaande van interessante toepassingen in AI, public en private ledgers, developement aan nieuwe coins, nieuwe netwerken, 
                                 nieuwe protocollen, noem maar op!
@@ -121,11 +142,11 @@
             </div>
 
         </section>
-        <section id='slack'>
-            <div class='container'>
+        <section id="slack">
+            <div class="container">
                 <h1 class="text-center">Sluit je aan op Slack</h1>
-                <div class='row__center'>
-                    <div class='col-sm-full col-50 padded text-justify'>
+                <div class="row__center">
+                    <div class="col-sm-full col-50 padded text-justify">
                         <p>
                              Wees vrij om ons een bezoekje te komen brengen op <b>Slack</b>
                         </p>
@@ -136,14 +157,14 @@
                             Lezen over je favoriete coins? Gelezen over een nieuwe ICO, waar je graag met iemand mee wil ping-pongen? Het kan allemaal.
                         </p>
                     </div>
-                    <div class='col-sm-full col-50 text-center'>
-                        <img class='slack-logo' src='images/ctb_slack_logo.png' alt='Slack Logo'>
-                        <div class='row text-center'>
-                            <div class='container text-center'>
-                                <a class='btn btn-sm-full' href='https://slack.com/downloads'>
+                    <div class="col-sm-full col-50 text-center">
+                        <img class="slack-logo" src="images/ctb_slack_logo.png" alt="Slack Logo">
+                        <div class="row text-center">
+                            <div class="container text-center">
+                                <a class="btn btn-sm-full" href="https://slack.com/downloads">
                                     Download Slack
                                 </a>
-                                <a class='btn btn--green btn-sm-full' href='https://join.slack.com/cryptotradingbelgium/shared_invite/MjAyMDM1NTg3MDA4LTE0OTgyMzQwMjMtZTBlODFjYjRlYQ'>
+                                <a class="btn btn--green btn-sm-full" href="https://join.slack.com/cryptotradingbelgium/shared_invite/MjAyMDM1NTg3MDA4LTE0OTgyMzQwMjMtZTBlODFjYjRlYQ">
                                     Naar de groep!
                                 </a>
                             </div>
@@ -153,11 +174,11 @@
             </div>
         </section>
 
-        <section id='projecten'>
-            <div class='container'>
+        <section id="projecten">
+            <div class="container">
                 <h1 class="text-center">Projecten</h1>
-                <div class='row'>
-                    <div class='col-sm-full col-33 padded'>
+                <div class="row">
+                    <div class="col-sm-full col-33 padded">
                         <h2 class="text-center">Slack</h2>
                         <div class="text-center">
                             <img class="project-image" src="images/development_700.jpg">
@@ -170,7 +191,7 @@
                             Naast de tippingbot maken we ook werk van de Slack zo gebruiksvriendelijk mogelijk te maken.
                         </p>
                     </div>
-                    <div class='col-sm-full col-33 padded'>
+                    <div class="col-sm-full col-33 padded">
                         <h2 class="text-center">Kennis delen</h2>
                         <div class="text-center">
                             <img class="project-image" src="images/knowledge_700.jpg">
@@ -181,10 +202,10 @@
                             technologische onderwerpen gaande over de wallets.
                         </p>
                         <p class="text-justify">
-                            Wanneer nieuwe ICO's uitkomen bespreken we het potentieel op onze interne fora.
+                            Wanneer nieuwe ICO"s uitkomen bespreken we het potentieel op onze interne fora.
                         </p>
                     </div>
-                    <div class='col-sm-full col-33 padded'>
+                    <div class="col-sm-full col-33 padded">
                         <h2 class="text-center">Events</h2>
                         <div class="text-center">
                             <img class="project-image" src="images/events_700.jpg">
@@ -193,31 +214,25 @@
                             Voor zij die willen wordt er regelmatig samengekomen voor een face-to-face ontmoeting met verschillende leden. 
                             Zowel om het gezicht achter de naam de te leren kennen, als wat informeler praten over crypto en te netwerken.
                         </p>
-                        <div>
-                            <b>Volgende meeting</b>
-                        </div>
-                        <p>
-                            In planning
-                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class='footer dark-section'>
-            <div class='container'>
-                <a href='sitemap'>Sitemap</a>   |   © 2017 All rights reserved
+        <footer class="footer dark-section">
+            <div class="container">
+                CryptoBeleggers    |    © 2017 All rights reserved
             </div>
         </footer>
         <script src="app.js"></script>
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
 
-	  ga('create', 'UA-104245053-1', 'auto');
-	  ga('send', 'pageview');
+	  ga("create", "UA-104245053-1", "auto");
+	  ga("send", "pageview");
 
 	</script>
     </body>

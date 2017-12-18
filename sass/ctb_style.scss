@@ -2,8 +2,8 @@
 //AUTHOR: @amnesiacu
 
 //Imports
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+// @import url(https://fonts.googleapis.com/css?family=Montserrat);
+// @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @font-face {
     font-family: Qanelas;
     src: url("/fonts/Qanelas.otf") format("opentype");
@@ -173,7 +173,6 @@ header{
 
       @include flex-row-vertical_center;
 
-      height:             60%;
       align-content:      space-between;
 
 
@@ -412,10 +411,11 @@ nav{
         padding:                0;
         margin:                 0 0 0 25px;
         color:                  #111;
-        font-family:            "Qanelas", serif;
+        font-family:            $font-head;
         line-height:            0px;
 
     }
+    margin-bottom: 50px;
 
 }
 
@@ -432,10 +432,6 @@ nav{
 
 
         &--main-introduction{
-            width:      70%;
-            margin:     auto;
-            margin-bottom: 30px;
-
             .text--wrap{
                 line-height:    1.5em;
                 font-size:      1.2em;
@@ -572,4 +568,14 @@ nav{
 .project-image{
     width: 80%;
     border-radius: 7px;
+}
+
+.headerLogo {
+    height: 125px;
+    width: 125px;
+}
+
+.socialLogo {
+    height: 75px;
+    width: 75px;
 }

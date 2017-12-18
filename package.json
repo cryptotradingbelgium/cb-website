@@ -1,7 +1,7 @@
 {
-  "name": "ctb-website",
-  "version": "1.0.0",
-  "description": "Crypto Trading Belgium Homepage",
+  "name": "cb-website",
+  "version": "0.0.1",
+  "description": "Crypto Beleggers Homepage",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,8 @@
     "express": "^4.15.3",
     "morgan": "^1.8.2",
     "request": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1"
   }
 }
